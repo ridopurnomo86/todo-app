@@ -1,10 +1,18 @@
 .app-container {
   display: flex;
+  position: relative;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
   padding-block: 2rem;
   padding-inline: 2rem;
+  min-height: 100vh;
+}
+
+footer {
+  position:absolute;
+  bottom:0;
+  width:100%;
+  height:60px;   /* Height of the footer */
 }
 
 .container {
@@ -188,4 +196,26 @@ label[data-type-checked="true"] {
   line-height: 15px;
   color: #FFFFFF;
   margin-left: 4px;
+}
+
+.footer-container {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding-block: 2rem;
+}
+
+.footer-container > .title-text {
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 17px;
+  color: rgba(130, 130, 130, 1);
+}
+
+.bold-underline {
+  font-weight: 700;
+  text-decoration: underline;
+  color: rgba(130, 130, 130, 1);
 }
